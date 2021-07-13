@@ -14,6 +14,16 @@
 	"IsBetaVersion": false,
 	"IsExperimentalVersion": false,
 	"Installed": false,
+  "Plugins": [
+    {
+      "Name": "Puerts",
+      "Enabled": true
+    },
+    {
+      "Name": "RuntimeMeshComponent",
+      "Enabled": true
+    }
+  ],
 	"Modules": [
 		{
       "Name": "Mintcraft",
