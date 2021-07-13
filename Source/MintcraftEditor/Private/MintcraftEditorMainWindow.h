@@ -1,45 +1,46 @@
 ﻿#pragma once
 
-#include "MintCraftPCH.h"
-#include "MintCraftMainWindow.generated.h"
+#include "MintcraftEditorPCH.h"
+#include "MintcraftEditorMainWindow.generated.h"
 
 UCLASS(Blueprintable)
-class UMintCraftMainWindow : public UObject
+class UMintcraftEditorMainWindow : public UObject
 {
 	GENERATED_BODY()
 
 public:
-	UMintCraftMainWindow() {};
-	~UMintCraftMainWindow() {}
+	UMintcraftEditorMainWindow(){};
+	~UMintcraftEditorMainWindow() {}
+
 public:
 	UPROPERTY(EditAnywhere, Category = "Category1")
-		int aaa = 1;
+	int aaa = 1;
 
 	UPROPERTY(EditAnywhere, Category = "Category1")
-		FString bbb = "yue wu shi zhu tou!";
+	FString bbb = "yue wu shi zhu tou!";
 
 	UPROPERTY(EditAnywhere, Category = "Category1")
-		bool ccc = false;
+	bool ccc = false;
 
 	UPROPERTY(EditAnywhere, Category = "Category1")
-		TArray<FString> ddd;
+	TArray<FString> ddd;
 
 	UPROPERTY(EditAnywhere, Category = "Category1")
-		TMap<FString, int> eee;
+	TMap<FString, int> eee;
 
 	UPROPERTY(EditAnywhere, Category = "Category2")
-		int index = 0;
+	int index = 0;
 
 	UFUNCTION(CallInEditor, Category = "Category2")
-		void TestFunc();
+	void TestFunc();
 
 	UPROPERTY(EditAnywhere, Category = "Category3")
-		TSoftObjectPtr<AActor> actor;
+	TSoftObjectPtr<AActor> actor;
 
 	UPROPERTY(EditAnywhere, Category = "Category3")
-		double size = 1.0;
+	double size = 1.0;
 
-	virtual void PostEditChangeProperty(struct FPropertyChangedEvent& PropertyChangedEvent);
+	virtual void PostEditChangeProperty(struct FPropertyChangedEvent &PropertyChangedEvent);
 
 private:
 };

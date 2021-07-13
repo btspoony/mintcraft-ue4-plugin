@@ -16,9 +16,27 @@
 	"Installed": false,
 	"Modules": [
 		{
-			"Name": "MintCraft",
+      "Name": "Mintcraft",
+      "Type": "Runtime",
+      "LoadingPhase": "Default",
+      "WhitelistPlatforms": [
+        "Win64",
+        "Linux",
+        "Mac",
+        "XboxOne",
+        "PS4",
+        "Android"
+      ]
+    },
+		{
+			"Name": "MintcraftEditor",
 			"Type": "Editor",
-			"LoadingPhase": "Default"
+			"LoadingPhase": "Default",
+      "WhitelistPlatforms": [
+        "Win64",
+        "Linux",
+        "Mac"
+      ]
 		}
 	]
 }
