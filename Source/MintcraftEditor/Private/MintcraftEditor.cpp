@@ -56,7 +56,7 @@ void FMintcraftEditorModule::ShutdownModule()
 
 static bool ShouldShowProperty(const FPropertyAndParent &PropertyAndParent, bool bHaveTemplate)
 {
-	const UProperty &Property = PropertyAndParent.Property;
+	const FProperty &Property = PropertyAndParent.Property;
 
 	if (bHaveTemplate)
 	{
