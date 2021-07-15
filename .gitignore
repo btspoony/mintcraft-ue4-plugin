@@ -128,3 +128,6 @@ typings/
 
 # npm package lock file
 package-lock.json
+
+# Content Export
+Content/JavaScript/**/*

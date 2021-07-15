@@ -12,6 +12,4 @@ public:
 
 private:
 	// TODO
-private:
-	// TODO
 };

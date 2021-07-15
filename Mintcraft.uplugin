@@ -30,7 +30,8 @@
       "Type": "Runtime",
       "LoadingPhase": "Default",
       "AdditionalDependencies": [
-        "JsEnv"
+        "JsEnv",
+        "Puerts"
       ],
       "WhitelistPlatforms": [
         "Win64",
@@ -46,7 +47,8 @@
       "Type": "Editor",
       "LoadingPhase": "Default",
       "AdditionalDependencies": [
-        "JsEnv"
+        "JsEnv",
+        "Puerts"
       ],
       "WhitelistPlatforms": [
         "Win64",
