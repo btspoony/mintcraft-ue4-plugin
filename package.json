@@ -5,8 +5,14 @@
   "scripts": {
     "start": "tsc -w"
   },
-  "dependencies": {},
+  "dependencies": {
+    "@polkadot/util": "^7.0.1",
+    "@polkadot/util-crypto": "^7.0.1",
+    "ethereumjs-wallet": "^1.0.1"
+  },
   "devDependencies": {
+    "@polkadot/api": "^5.0.1",
+    "@polkadot/types": "^5.0.1",
     "@types/mocha": "^7.0.1",
     "@typescript-eslint/eslint-plugin": "4",
     "@typescript-eslint/parser": "^4.28.0",
