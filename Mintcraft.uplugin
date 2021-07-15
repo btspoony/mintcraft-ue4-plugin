@@ -37,8 +37,7 @@
         "Win64",
         "Linux",
         "Mac",
-        "XboxOne",
-        "PS4",
+        "IOS",
         "Android"
       ]
     },
@@ -49,11 +48,6 @@
       "AdditionalDependencies": [
         "JsEnv",
         "Puerts"
-      ],
-      "WhitelistPlatforms": [
-        "Win64",
-        "Linux",
-        "Mac"
       ]
     }
   ]
