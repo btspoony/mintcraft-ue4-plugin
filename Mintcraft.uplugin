@@ -29,6 +29,9 @@
       "Name": "Mintcraft",
       "Type": "Runtime",
       "LoadingPhase": "Default",
+			"AdditionalDependencies": [
+				"JsEnv"
+			],
       "WhitelistPlatforms": [
         "Win64",
         "Linux",
@@ -42,6 +45,9 @@
 			"Name": "MintcraftEditor",
 			"Type": "Editor",
 			"LoadingPhase": "Default",
+			"AdditionalDependencies": [
+				"JsEnv"
+			],
       "WhitelistPlatforms": [
         "Win64",
         "Linux",

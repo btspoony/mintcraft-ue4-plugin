@@ -4,6 +4,8 @@ public class MintcraftEditor : ModuleRules
 {
   public MintcraftEditor(ReadOnlyTargetRules Target) : base(Target)
   {
+    bEnableUndefinedIdentifierWarnings = false;
+
     PCHUsage = ModuleRules.PCHUsageMode.UseExplicitOrSharedPCHs;
 
     PublicIncludePaths.AddRange(
@@ -27,29 +29,20 @@ public class MintcraftEditor : ModuleRules
       }
     );
 
-    if (target.bBuildEditor == true)
-    {
-      PrivateDependencyModuleNames.AddRange(
-        new string[]
-        {
-          "Projects",
-          "InputCore",
-          "UnrealEd",
-          "ToolMenus",
-          "CoreUObject",
-          "Engine",
-          "Slate",
-          "SlateCore",
-          "Serialization",
-          "OpenSSL",
-          "JsEnv",
-          "Puerts",
-          "RuntimeMeshComponent",
-          // mintcraft runtime module
-          "Mintcraft",
-        }
-      );
-    }
+    PrivateDependencyModuleNames.AddRange(
+      new string[]
+      {
+        "Projects",
+        "InputCore",
+        "CoreUObject",
+        "Engine",
+        "Serialization",
+        "OpenSSL",
+        "JsEnv",
+        "Puerts",
+        "RuntimeMeshComponent",
+      }
+    );
 
     DynamicallyLoadedModuleNames.AddRange(
       new string[]
@@ -57,5 +50,7 @@ public class MintcraftEditor : ModuleRules
 				// ... add any modules that your module loads dynamically here ...
 			}
     );
+
+    bEnableUndefinedIdentifierWarnings = false;
   }
 }

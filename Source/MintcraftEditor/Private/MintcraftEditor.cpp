@@ -1,5 +1,3 @@
-// Copyright Epic Games, Inc. All Rights Reserved.
-
 #include "MintcraftEditor.h"
 #include "MintcraftEditorStyle.h"
 #include "MintcraftEditorCommands.h"
@@ -10,7 +8,7 @@
 #include "ToolMenus.h"
 #include "MintcraftEditorMainWindow.h"
 
-static const FName MintcraftEditorTabName("MintcraftEditor");
+static const FName MintcraftEditorTabName("Mintcraft");
 
 #define LOCTEXT_NAMESPACE "FMintcraftEditorModule"
 

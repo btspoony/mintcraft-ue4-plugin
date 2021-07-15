@@ -1,0 +1,16 @@
+{
+  "compilerOptions": {
+    "target": "esnext",
+    "module": "commonjs",
+    "experimentalDecorators": true,
+    "sourceMap": true,
+    "typeRoots": [
+      "../Plugins/Puerts/Typing",
+      "./node_modules/@types"
+    ],
+    "outDir": "Content/JavaScript"
+  },
+  "include": [
+    "TsSrc/**/*"
+  ],
+}
