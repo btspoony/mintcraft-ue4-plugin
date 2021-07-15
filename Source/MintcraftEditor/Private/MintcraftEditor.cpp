@@ -111,7 +111,7 @@ void FMintcraftEditorModule::RegisterMenus()
 	{
 		UToolMenu *Menu = UToolMenus::Get()->ExtendMenu("LevelEditor.MainMenu.Window");
 		{
-			FToolMenuSection &Section = Menu->FindOrAddSection("MintcraftEditor");
+			FToolMenuSection &Section = Menu->FindOrAddSection("Mintcraft");
 			Section.AddMenuEntryWithCommandList(FMintcraftEditorCommands::Get().OpenPluginWindow, PluginCommands);
 		}
 	}
@@ -119,7 +119,7 @@ void FMintcraftEditorModule::RegisterMenus()
 	{
 		UToolMenu *ToolbarMenu = UToolMenus::Get()->ExtendMenu("LevelEditor.LevelEditorToolBar");
 		{
-			FToolMenuSection &Section = ToolbarMenu->FindOrAddSection("MintcraftEditor");
+			FToolMenuSection &Section = ToolbarMenu->FindOrAddSection("Mintcraft");
 			{
 				FToolMenuEntry &Entry = Section.AddEntry(FToolMenuEntry::InitToolBarButton(FMintcraftEditorCommands::Get().OpenPluginWindow));
 				Entry.SetCommandList(PluginCommands);

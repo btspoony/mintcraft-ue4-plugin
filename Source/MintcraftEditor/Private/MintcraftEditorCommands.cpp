@@ -4,7 +4,7 @@
 
 void FMintcraftEditorCommands::RegisterCommands()
 {
-	UI_COMMAND(OpenPluginWindow, "MintcraftEditor", "Bring up MintcraftEditor window", EUserInterfaceActionType::Button, FInputGesture());
+	UI_COMMAND(OpenPluginWindow, "Mintcraft", "Bring up Mintcraft window", EUserInterfaceActionType::Button, FInputGesture());
 }
 
 #undef LOCTEXT_NAMESPACE
