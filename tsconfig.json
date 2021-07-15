@@ -8,7 +8,7 @@
       "../Puerts/Typing",
       "./node_modules/@types"
     ],
-    "outDir": "Content/JavaScript"
+    "outDir": "../../Content/JavaScript/Mintcraft"
   },
   "include": [
     "TsSrc/**/*"

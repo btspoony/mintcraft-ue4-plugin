@@ -34,12 +34,14 @@ void FMintcraftEditorModule::StartupModule()
 
 	MainWindow = NewObject<UMintcraftEditorMainWindow>(GetTransientPackage());
 	MainWindow->AddToRoot();
+	MainWindow->OnInit();
 }
 
 void FMintcraftEditorModule::ShutdownModule()
 {
 	// This function may be called during shutdown to clean up your module.  For modules that support dynamic reloading,
 	// we call this function before unloading the module.
+	MainWindow->Shutdown();
 
 	UToolMenus::UnRegisterStartupCallback(this);
 
@@ -101,6 +103,9 @@ TSharedRef<SDockTab> FMintcraftEditorModule::OnSpawnPluginTab(const FSpawnTabArg
 void FMintcraftEditorModule::PluginButtonClicked()
 {
 	FGlobalTabmanager::Get()->TryInvokeTab(MintcraftEditorTabName);
+
+	// activate js env
+	MainWindow->OnActivated();
 }
 
 void FMintcraftEditorModule::RegisterMenus()

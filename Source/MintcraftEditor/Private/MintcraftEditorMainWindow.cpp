@@ -1,8 +1,23 @@
 ﻿#include "MintcraftEditorMainWindow.h"
 
-void UMintcraftEditorMainWindow::TestFunc()
+void UMintcraftEditorMainWindow::OnInit()
 {
-    ++index;
+    GameScript = MakeShared<puerts::FJsEnv>();
+    //GameScript = MakeShared<puerts::FJsEnv>(std::make_unique<puerts::DefaultJSModuleLoader>(TEXT("JavaScript")), std::make_shared<puerts::FDefaultLogger>(), 8080);
+    //GameScript->WaitDebugger();
+}
+
+void UMintcraftEditorMainWindow::OnActivated()
+{
+    TArray<TPair<FString, UObject*>> Arguments;
+    Arguments.Add(TPair<FString, UObject*>(TEXT("MintcraftEditor"), this));
+
+    GameScript->Start("Mintcraft/Entry", Arguments);
+}
+
+void UMintcraftEditorMainWindow::Shutdown()
+{
+    GameScript.Reset();
 }
 
 void UMintcraftEditorMainWindow::PostEditChangeProperty(struct FPropertyChangedEvent &PropertyChangedEvent)
@@ -20,4 +35,9 @@ void UMintcraftEditorMainWindow::PostEditChangeProperty(struct FPropertyChangedE
             }
         }
     }
+}
+
+void UMintcraftEditorMainWindow::TestFunc()
+{
+    ++index;
 }
