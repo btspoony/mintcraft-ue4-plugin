@@ -1,10 +1,10 @@
 #include "MintcraftEditor.h"
 #include "MintcraftEditorStyle.h"
 #include "MintcraftEditorCommands.h"
-#include "LevelEditor.h"
 #include "Widgets/Docking/SDockTab.h"
 #include "Widgets/Layout/SBox.h"
 #include "Widgets/Text/STextBlock.h"
+#include "LevelEditor.h"
 #include "ToolMenus.h"
 #include "MintcraftEditorMainWindow.h"
 
@@ -30,7 +30,7 @@ void FMintcraftEditorModule::StartupModule()
 
 	UToolMenus::RegisterStartupCallback(FSimpleMulticastDelegate::FDelegate::CreateRaw(this, &FMintcraftEditorModule::RegisterMenus));
 
-	FGlobalTabmanager::Get()->RegisterNomadTabSpawner(MintcraftEditorTabName, FOnSpawnTab::CreateRaw(this, &FMintcraftEditorModule::OnSpawnPluginTab)).SetDisplayName(LOCTEXT("FMintcraftEditorTabTitle", "MintcraftEditor")).SetMenuType(ETabSpawnerMenuType::Hidden);
+	FGlobalTabmanager::Get()->RegisterNomadTabSpawner(MintcraftEditorTabName, FOnSpawnTab::CreateRaw(this, &FMintcraftEditorModule::OnSpawnPluginTab)).SetDisplayName(LOCTEXT("FMintcraftEditorTabTitle", "Mintcraft")).SetMenuType(ETabSpawnerMenuType::Hidden);
 
 	MainWindow = NewObject<UMintcraftEditorMainWindow>(GetTransientPackage());
 	MainWindow->AddToRoot();

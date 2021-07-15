@@ -24,5 +24,5 @@ private:
 private:
 	TSharedPtr<class FUICommandList> PluginCommands;
 
-	class MintcraftEditorMainWindow *MainWindow;
+	class UMintcraftEditorMainWindow *MainWindow;
 };

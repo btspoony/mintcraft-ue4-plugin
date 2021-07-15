@@ -1,8 +1,8 @@
 using UnrealBuildTool;
 
-public class MintcraftEditor : ModuleRules
+public class Mintcraft : ModuleRules
 {
-  public MintcraftEditor(ReadOnlyTargetRules Target) : base(Target)
+  public Mintcraft(ReadOnlyTargetRules Target) : base(Target)
   {
     bEnableUndefinedIdentifierWarnings = false;
 

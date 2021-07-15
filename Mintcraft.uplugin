@@ -1,19 +1,19 @@
 {
-	"FileVersion": 3,
-	"Version": 1,
-	"VersionName": "1.0",
-	"FriendlyName": "Mintcraft NFT Helper",
-	"Description": "Mintcraft NFT plugin for Unreal Engine 4",
-	"Category": "Blockchain",
-	"CreatedBy": "MintEngine Lab",
-	"CreatedByURL": "https://github.com/MintEngine",
-	"DocsURL": "https://github.com/MintEngine/mintcraft-ue4-plugins",
-	"MarketplaceURL": "",
-	"SupportURL": "https://github.com/MintEngine/mintcraft-ue4-plugins/issues",
-	"CanContainContent": true,
-	"IsBetaVersion": false,
-	"IsExperimentalVersion": false,
-	"Installed": false,
+  "FileVersion": 3,
+  "Version": 1,
+  "VersionName": "1.0",
+  "FriendlyName": "Mintcraft NFT Helper",
+  "Description": "Mintcraft NFT plugin for Unreal Engine 4",
+  "Category": "Blockchain",
+  "CreatedBy": "MintEngine Lab",
+  "CreatedByURL": "https://github.com/MintEngine",
+  "DocsURL": "https://github.com/MintEngine/mintcraft-ue4-plugins",
+  "MarketplaceURL": "",
+  "SupportURL": "https://github.com/MintEngine/mintcraft-ue4-plugins/issues",
+  "CanContainContent": true,
+  "IsBetaVersion": false,
+  "IsExperimentalVersion": false,
+  "Installed": false,
   "Plugins": [
     {
       "Name": "Puerts",
@@ -24,14 +24,14 @@
       "Enabled": true
     }
   ],
-	"Modules": [
-		{
+  "Modules": [
+    {
       "Name": "Mintcraft",
       "Type": "Runtime",
       "LoadingPhase": "Default",
-			"AdditionalDependencies": [
-				"JsEnv"
-			],
+      "AdditionalDependencies": [
+        "JsEnv"
+      ],
       "WhitelistPlatforms": [
         "Win64",
         "Linux",
@@ -41,18 +41,18 @@
         "Android"
       ]
     },
-		{
-			"Name": "MintcraftEditor",
-			"Type": "Editor",
-			"LoadingPhase": "Default",
-			"AdditionalDependencies": [
-				"JsEnv"
-			],
+    {
+      "Name": "MintcraftEditor",
+      "Type": "Editor",
+      "LoadingPhase": "Default",
+      "AdditionalDependencies": [
+        "JsEnv"
+      ],
       "WhitelistPlatforms": [
         "Win64",
         "Linux",
         "Mac"
       ]
-		}
-	]
+    }
+  ]
 }

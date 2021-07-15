@@ -8,7 +8,7 @@ class FMintcraftEditorCommands : public TCommands<FMintcraftEditorCommands>
 {
 public:
 	FMintcraftEditorCommands()
-			: TCommands<FMintcraftEditorCommands>(TEXT("MintcraftEditor"), NSLOCTEXT("Contexts", "MintcraftEditor", "MintcraftEditor Plugin"), NAME_None, FMintcraftEditorStyle::GetStyleSetName())
+			: TCommands<FMintcraftEditorCommands>(TEXT("Mintcraft"), NSLOCTEXT("Contexts", "Mintcraft", "Mintcraft Plugin"), NAME_None, FMintcraftEditorStyle::GetStyleSetName())
 	{
 	}
 

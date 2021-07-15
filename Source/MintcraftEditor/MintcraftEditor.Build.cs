@@ -27,7 +27,7 @@ public class MintcraftEditor : ModuleRules
       }
     );
 
-    if (target.bBuildEditor == true)
+    if (Target.bBuildEditor == true)
     {
       PrivateDependencyModuleNames.AddRange(
         new string[]
