@@ -3,6 +3,7 @@
     "target": "esnext",
     "module": "commonjs",
     "experimentalDecorators": true,
+    "strictNullChecks": true,
     "sourceMap": true,
     "typeRoots": [
       "../Puerts/Typing",
