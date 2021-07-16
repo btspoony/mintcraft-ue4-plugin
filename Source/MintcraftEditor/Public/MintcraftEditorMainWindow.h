@@ -46,10 +46,10 @@ public:
 
 	virtual void OnInit();
 	
-    virtual void OnActivated();
+  virtual void OnActivated();
 
-    virtual void Shutdown();
+  virtual void Shutdown();
 
 private:
-    TSharedPtr<puerts::FJsEnv> GameScript;
+  TSharedPtr<puerts::FJsEnv> GameScript;
 };

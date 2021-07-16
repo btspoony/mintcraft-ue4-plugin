@@ -11,4 +11,5 @@ public:
 	virtual void ShutdownModule() override;
 
 private:
+	class UGatewayAPI* GatewayAPI;
 };

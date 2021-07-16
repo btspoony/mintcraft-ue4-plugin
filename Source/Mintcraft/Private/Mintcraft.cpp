@@ -1,10 +1,13 @@
 #include "Mintcraft.h"
+#include "GatewayAPI.h"
 
 #define LOCTEXT_NAMESPACE "FMintcraftModule"
 
 void FMintcraftModule::StartupModule()
 {
 	// This code will execute after your module is loaded into memory; the exact timing is specified in the .uplugin file per-module
+
+	GatewayAPI = NewObject<UGatewayAPI>(GetTransientPackage());
 }
 
 void FMintcraftModule::ShutdownModule()
