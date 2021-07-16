@@ -1,20 +1,20 @@
 #pragma once
 
 #include "CoreMinimal.h"
-#include "UObject/NoExportTypes.h"
-#include "UObject/ObjectMacros.h"
-#include "GatewayAPI.generated.h"
 
 namespace mintcraft
 {
-  UCLASS(Blueprintable, BlueprintType)
-  class UGatewayAPI : public UObject
+  class FGatewayAPI
   {
-    GENERATED_BODY()
+  public:
+    FGatewayAPI()
+      : BaseURL(TEXT("http://localhost:8000/"))
+    {}
 
   public:
-    // todo
+    virtual FString& GetBaseURL() { return BaseURL; }
+
   private:
-    // todo
+    FString BaseURL;
   };
 }

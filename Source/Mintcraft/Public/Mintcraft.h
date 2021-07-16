@@ -2,6 +2,7 @@
 
 #include "CoreMinimal.h"
 #include "Modules/ModuleManager.h"
+#include "GatewayAPI.h"
 
 class FMintcraftModule : public IModuleInterface
 {
@@ -11,5 +12,5 @@ public:
 	virtual void ShutdownModule() override;
 
 private:
-	class UGatewayAPI* GatewayAPI;
+	TSharedPtr<mintcraft::FGatewayAPI> GatewayAPI;
 };

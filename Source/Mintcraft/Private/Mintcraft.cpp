@@ -7,7 +7,7 @@ void FMintcraftModule::StartupModule()
 {
 	// This code will execute after your module is loaded into memory; the exact timing is specified in the .uplugin file per-module
 
-	GatewayAPI = NewObject<UGatewayAPI>(GetTransientPackage());
+	GatewayAPI = MakeShared<mintcraft::FGatewayAPI>();
 }
 
 void FMintcraftModule::ShutdownModule()
