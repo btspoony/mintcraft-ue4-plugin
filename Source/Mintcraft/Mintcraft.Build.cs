@@ -26,7 +26,9 @@ public class Mintcraft : ModuleRules
       new string[]
       {
         "Core",
-        "HTTP",
+        "Http",
+        "Json",
+        "JsonUtilities",
       }
     );
 
