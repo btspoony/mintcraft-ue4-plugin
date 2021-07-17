@@ -18,10 +18,6 @@
     {
       "Name": "Puerts",
       "Enabled": true
-    },
-    {
-      "Name": "RuntimeMeshComponent",
-      "Enabled": true
     }
   ],
   "Modules": [

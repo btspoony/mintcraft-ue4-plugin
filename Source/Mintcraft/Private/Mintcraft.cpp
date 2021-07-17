@@ -19,3 +19,5 @@ void FMintcraftModule::ShutdownModule()
 #undef LOCTEXT_NAMESPACE
 
 IMPLEMENT_MODULE(FMintcraftModule, Mintcraft)
+
+DEFINE_LOG_CATEGORY(MintcraftLog);

@@ -15,6 +15,7 @@ public:
 	~UMintcraftEditorMainWindow() {}
 
 public:
+	/**
 	UPROPERTY(EditAnywhere, Category = "Category1")
 	int aaa = 1;
 
@@ -34,22 +35,37 @@ public:
 	int index = 0;
 
 	UFUNCTION(CallInEditor, Category = "Category2")
-	void TestFunc();
+	void ExecuteMint();
 
 	UPROPERTY(EditAnywhere, Category = "Category3")
 	TSoftObjectPtr<AActor> actor;
 
 	UPROPERTY(EditAnywhere, Category = "Category3")
 	double size = 1.0;
+*/
+	UPROPERTY(VisibleAnywhere, Category = "Gateway")
+	FString gateway = "http://127.0.0.1:7001/";
+
+	UPROPERTY(VisibleAnywhere, Category = "Storage")
+	FString storage = "ipfs";
+
+	UPROPERTY(VisibleAnywhere, Category = "NFT")
+	int contract = 0;
+
+	UPROPERTY(EditAnywhere, Category = "NFT")
+	TSoftObjectPtr<AActor> actor;
+
+	UFUNCTION(CallInEditor, Category = "NFT")
+	void ExecuteMint();
 
 	virtual void PostEditChangeProperty(struct FPropertyChangedEvent &PropertyChangedEvent);
 
 	virtual void OnInit();
-	
-  virtual void OnActivated();
 
-  virtual void Shutdown();
+	virtual void OnActivated();
+
+	virtual void Shutdown();
 
 private:
-  TSharedPtr<puerts::FJsEnv> GameScript;
+	TSharedPtr<puerts::FJsEnv> GameScript;
 };

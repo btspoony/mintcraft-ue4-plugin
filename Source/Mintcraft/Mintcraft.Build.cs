@@ -29,6 +29,9 @@ public class Mintcraft : ModuleRules
         "Http",
         "Json",
         "JsonUtilities",
+        // JS env
+        "JsEnv",
+        "Puerts",
       }
     );
 
@@ -41,9 +44,6 @@ public class Mintcraft : ModuleRules
         "Engine",
         "Serialization",
         "OpenSSL",
-        "JsEnv",
-        "Puerts",
-        "RuntimeMeshComponent",
       }
     );
 

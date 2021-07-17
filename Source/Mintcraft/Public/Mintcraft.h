@@ -14,3 +14,5 @@ public:
 private:
 	TSharedPtr<mintcraft::FGatewayAPI> GatewayAPI;
 };
+
+DECLARE_LOG_CATEGORY_EXTERN(MintcraftLog, Warning, All);

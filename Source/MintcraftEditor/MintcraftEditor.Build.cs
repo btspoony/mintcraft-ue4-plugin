@@ -44,7 +44,6 @@ public class MintcraftEditor : ModuleRules
           "OpenSSL",
           "JsEnv",
           "Puerts",
-          "RuntimeMeshComponent",
           // mintcraft runtime module
           "Mintcraft",
         }
